@@ -4,7 +4,9 @@
   "description": "xs, cli",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=build webpack",
+    "start": "webpack --config ./config/webpack.base.js"
   },
   "keywords": [
     "cli"
@@ -21,6 +23,13 @@
     "download-git-repo": "^3.0.2",
     "handlebars": "^4.7.6",
     "inquirer": "^7.1.0",
-    "ora": "^4.0.4"
+    "ora": "^4.0.4",
+    "typescript": "^3.9.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
   }
 }
